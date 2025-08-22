@@ -7,7 +7,12 @@ export default defineConfig({
     plugins: [
         react(),
         keycloakify({
-            accountThemeImplementation: "none"
+            themeName: ["lets-atlantica-1-0-0"],
+            accountThemeImplementation: "none",
+            keycloakVersionTargets: {
+                "22-to-25": false,
+                "all-other-versions": "lets-atlantica-v.1.0.0.jar"
+            }
         })
     ]
 });
