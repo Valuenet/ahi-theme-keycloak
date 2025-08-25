@@ -72,7 +72,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                                     aria-expanded="false"
                                     aria-controls="language-switch1"
                                 >
-                                    {currentLanguage.label}
+                                    {currentLanguage.label === "Brasil" ? "Português (Brasil)" : currentLanguage.label}
                                 </button>
                                 <ul
                                     role="menu"
@@ -85,7 +85,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                                     {enabledLanguages.map(({ languageTag, label, href }, i) => (
                                         <li key={languageTag} className={kcClsx("kcLocaleListItemClass")} role="none">
                                             <a role="menuitem" id={`language-${i + 1}`} className={kcClsx("kcLocaleItemClass")} href={href}>
-                                                {label}
+                                                {label === "Brasil" ? "Português (Brasil)" : label}
                                             </a>
                                         </li>
                                     ))}

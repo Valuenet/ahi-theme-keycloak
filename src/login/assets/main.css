@@ -85,6 +85,10 @@ body {
 
 .kcFormGroupClass > .kcLabelWrapperClass > .kcLabelClass {
     position: relative;
+    
+}
+
+#kc-register-form .kcFormGroupClass > .kcLabelWrapperClass > .kcLabelClass {
     z-index: -1;
 }
 
@@ -98,6 +102,11 @@ body {
     margin-top: -.7rem;
     position: relative;
     z-index: 1;
+}
+
+.kcFormGroupClass > .kcInputWrapperClass > .kcInputClassCheckbox {
+    margin-top: .75rem;
+    margin-left: .75rem;
 }
 
 .kcInputClass {
