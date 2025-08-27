@@ -9,6 +9,8 @@ const { useI18n, ofTypeI18n } = i18nBuilder
                                         "pt-BR": {
                                             "error-user-attribute-required": "Campo de preenchimento obrigatório",
                                             "registerTitle": "Cadastre-se",
+                                            "usernameOrEmail": "CPF ou E-mail",
+                                            "username": "CPF",
                                             "emailExistsMessage": "Já existe uma conta com este endereço de e-mail.",
                                             "acceptTerms": "Aceito os termos e condições",
                                             "invalidUsernameMessage": "Nome de usuário inválido.",
